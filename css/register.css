@@ -1,0 +1,67 @@
+.formulario{
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+ }
+
+.tituloh1{
+    font-size: 50px;
+    color: #7e1c46;
+    text-align: center;
+}
+
+.subtitulo{
+    font-weight: bold;
+     color: #FF69B4;
+}
+
+.contenedorBTN{
+    border: 1px solid red;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-crear-cuenta{
+    margin: 15px;
+    height: 40px;
+    width: 10rem;
+    border-radius: 30px;
+    color: white;
+    background-color: #aa3e6d;
+    border: 2px solid #4b0e28;
+}
+
+.boton-inicio-sesion{
+    margin: 15px;
+    height: 40px;
+    width: 10rem;
+    color: white;
+    background-color: #dabfca;
+    border: 2px solid #835266;
+}
+
+body{
+   background:  url(../img/fondos/fondo-registro.jpg) no-repeat center center fixed;
+   background-size: cover;
+}
+
+footer{
+    height: auto;
+    width: auto;
+    background-color: #ff80b5;
+}
+.contenedorFooter{
+  width: auto;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
