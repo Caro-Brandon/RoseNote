@@ -1,3 +1,30 @@
-body{
-    background-color:pink;
+.contenedor{
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+ }
+.tituloh1{
+    font-size: 70px;
+    color: #FF92C2;
+}
+.subtitulo{
+    font-weight: bold;
+     color: #FF69B4;
+}
+.contenedorBTN{
+    border: 1px solid red;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    margin: 15px;
+    width: 10rem;
+    border: 1px solid blue;
 }
