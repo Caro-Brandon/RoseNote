@@ -1,0 +1,13 @@
+footer{
+    height: auto;
+    width: auto;
+    background-color: #ff80b5;
+}
+.contenedorFooter{
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

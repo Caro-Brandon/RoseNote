@@ -4,7 +4,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 2rem;
  }
 .tituloh1{
     font-size: 70px;
@@ -15,16 +15,59 @@
      color: #FF69B4;
 }
 .contenedorBTN{
-    border: 1px solid red;
-    padding: 20px;
+    padding: 5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.btn{
-    margin: 15px;
-    width: 10rem;
-    border: 1px solid blue;
+.contenedorindividual{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+ 
+.btn {
+  background-color: #fcb3c2;
+  color: black;
+  border: 2px solid #fcb3c2;
+  position: relative;
+  margin: 15px;
+    width: 12rem;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fcb3c2;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+.btn:hover {
+  color: white;
+   border: 2px solid #fcb3c2;
+  position: relative;
+  margin: 15px;
+  width: 12rem;
+}
+
+.textoBTN{
+    margin: 10px;
+    width: auto;
+}
+.contenedorTexto{
+    background-color: white;
+      padding: 10px;
+    width: 100%;
+    border: 1px solid #FCB3C2;
 }

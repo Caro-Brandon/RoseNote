@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="css/layout.css">
 
      <!-- footer css -->
- 
+    <link rel="stylesheet" href="css/footer.css">
+
 </head>
 <body>
     <header>
@@ -28,7 +29,11 @@
             $section = (isset($section)) ? $section : 'home';
             require_once $section . '.php';
         ?>
-    </main>
+    </main> 
+
+    <footer>
+        <?php include 'footer.php'; ?>
+    </footer>
 
       
 

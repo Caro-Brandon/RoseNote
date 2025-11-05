@@ -6,9 +6,33 @@
     y deja que florezca tus ideas </span>
 
     <div class="contenedorBTN">
-       <button class="btn">Notas personales</button>
-       <button class="btn">Tareas</button>
-       <button class="btn">Inspiracion</button>
-    </div>
+      <div class="contenedorindividual">
+       <div class="contenedorTexto">
+        <span>Notas personales</span>
+       </div>
+       <span class="textoBTN">"Guarda tus pensamientos"</span>
+       <button class="btn">Abrir</button>
+
+      </div>
+
+       <div class="contenedorindividual">
+       <div class="contenedorTexto">
+        <span>Tareas</span>
+       </div>
+       <span class="textoBTN">"Organiza tus pendientes"</span>
+       <button class="btn">Ver lista</button>
+
+      </div> 
+      
+       <div class="contenedorindividual">
+       <div class="contenedorTexto">
+        <span>Inspiracion</span>
+       </div>
+       <span class="textoBTN">"Inspirate todos los dias"</span>
+       <button class="btn">Ver frases</button>
+
+      </div>
+       
+     </div>
  
 </div>
