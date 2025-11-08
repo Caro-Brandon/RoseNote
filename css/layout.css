@@ -4,5 +4,5 @@ body{
    background:  url(../img/fondos/fondo.jpg) no-repeat center center fixed;
    background-size: cover;
    display: grid;
-   grid-template-rows: auto 1fr auto;
+   grid-template-rows:  auto 1fr auto;
 }

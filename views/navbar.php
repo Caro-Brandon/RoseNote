@@ -11,20 +11,20 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">RoseNote</a>
+          <a class="nav-link active" aria-current="page" href="#">RoseNotes</a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Sobre nosotros</a>
+          <a class="nav-link active" aria-current="page" href="about_us.php">Sobre nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Blog</a>
+          <a class="nav-link active" aria-current="page" href="blog.php">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+          <a class="nav-link active" aria-current="page" href="contact.php">Contacto</a>
         </li>
       </ul>
            <!-- por el momento no lo vamos a usar en este<div class="botones">

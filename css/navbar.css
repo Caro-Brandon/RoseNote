@@ -1,7 +1,12 @@
 .navbar{
    padding: 10px;
+    
    background-color: rgba(241, 150, 165, 0.475);
    display: flex;
    justify-content: center;
+ }
+ 
+.nav-item{
+    padding-inline: 20px;
  }
  

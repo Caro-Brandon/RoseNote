@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="css/contact.css">
+<section class="loginGeneral">
+  <form action="">
+     
+     <div class="contenedorForm">
+        <h1>Contacto</h1>
+        <div class="contenedor"> 
+             <input type="text" placeholder="Ingrese su nombre" class="rellenar">
+        </div>
+
+        <div class="contenedor"> 
+             <input type="text" placeholder="Ingrese su apellido" class="rellenar">
+        </div>
+
+        <div class="contenedor Comentario"> 
+            <span>Comentario</span>
+            <textarea name="comentario" id="comentario" class="comentario rellenar"></textarea>
+        </div>
+
+       
+        <button type="submit" class="btn">Enviar</button>
+
+     </div>
+  </form>
+
+</section>
