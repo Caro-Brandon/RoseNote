@@ -20,7 +20,11 @@
         <span>Tareas</span>
        </div>
        <span class="textoBTN">"Organiza tus pendientes"</span>
-       <button class="btn">Ver lista</button>
+      <a href="list_to_do.php" style="color:pink"> 
+        <button class="btn">
+          Ver lista
+        </button>
+      </a>
 
       </div> 
       
