@@ -1,0 +1,23 @@
+.contenedorGeneral{
+    height: 500px;
+    width: 1000px;
+ border: 1px solid rgba(132, 132, 132, 0.56);
+     backdrop-filter: blur(8px);
+    display: flex;
+  }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+.conetenedorTexto{
+    width: 50%;
+border: 1px solid red;
+
+}
+.contenedorImg{
+    width: 50%;
+      border: 1px solid red;
+}
