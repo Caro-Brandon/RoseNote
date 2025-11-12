@@ -21,18 +21,18 @@
 </head>
 <body>
     <header>
-        <?php include 'navbar.php'; ?> 
+        <?php include 'navbar.html'; ?> 
     </header>
         
     <main style="background">
         <?php
             $section = (isset($section)) ? $section : 'home';
-            require_once $section . '.php';
+            require_once $section . '.html';
         ?>
     </main> 
 
     <footer>
-        <?php include 'footer.php'; ?>
+        <?php include 'footer.html'; ?>
     </footer>
 
       
