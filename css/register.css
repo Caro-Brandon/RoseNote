@@ -1,67 +1,97 @@
-.formulario{
-  display: flex;
-  flex-direction: column; 
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+body{
+   background:  url(../img/fondos/fondo_registro2.jpg) no-repeat center center fixed;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 100vw;
+   height: 100vh;
+}
+ 
+ 
+ .contenedorForm{
+    text-align: center;
+    border: 1px solid rgba(132, 132, 132, 0.56);
+    backdrop-filter: blur(10px);
+    margin: 10px;
+    color: black;
+    width: 450px;
+    border-radius: 30px;
+    height: auto; 
+    padding: 40px; 
+ }
+ .contenedor{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    width: 100%;
+    height: 50px;
+  }
+  .contenedor.Comentario{
+    height: 100px;
+ 
+  }
+  
+ .contenedor input{
+    background: transparent;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline-color: pink;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+
+.contenedor textarea{
+   
+    background: transparent;
+    padding: 5px;
+    width: 100%;
+    height: 100px;
+    border: none;
+    outline-color: pink;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+ 
+.btn {
+    display: block;            
+    margin: 25px auto 0; 
+    background-color: #fcb3c2;
+    color: black;
+    border: 2px solid #fcb3c2;
+    position: relative;
+     width: 100%;
+  }
+  
+  .btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fcb3c2;
+    transition: width 0.3s ease;
+    z-index: -1;
+  }
+  
+  .btn:hover::after {
+    width: 100%;
+  }
+  
+  .btn:hover {
+    color: white;
+     border: 2px solid #fcb3c2;
+    position: relative;
+     width: 100%;
+
+  }
+ 
+ @media screen and (min-width: 576px){
+    .contenedorForm{
+    width: 432px;
+    }
  }
 
-.tituloh1{
-    font-size: 50px;
-    color: #7e1c46;
-    text-align: center;
-}
-
-.subtitulo{
-    font-weight: bold;
-     color: #FF69B4;
-}
-
-.contenedorBTN{
-    border: 1px solid red;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.boton-crear-cuenta{
-    margin: 15px;
-    height: 40px;
-    width: 10rem;
-    border-radius: 30px;
-    color: white;
-    background-color: #aa3e6d;
-    border: 2px solid #4b0e28;
-}
-
-.boton-inicio-sesion{
-    margin: 15px;
-    height: 40px;
-    width: 10rem;
-    color: white;
-    background-color: #dabfca;
-    border: 2px solid #835266;
-}
-
-body{
-   background:  url(../img/fondos/fondo-registro.jpg) no-repeat center center fixed;
-   background-size: cover;
-}
-
-footer{
-    height: auto;
-    width: auto;
-    background-color: #ff80b5;
-}
-.contenedorFooter{
-  width: auto;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}

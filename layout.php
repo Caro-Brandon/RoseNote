@@ -1,3 +1,7 @@
+<?php
+// include 'verific_usuario.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,10 +25,10 @@
 </head>
 <body>
     <header>
-        <?php include 'navbar.html'; ?> 
+        <?php include 'views/navbar.html'; ?> 
     </header>
         
-    <main style="background">
+    <main>
         <?php
             $section = (isset($section)) ? $section : 'home';
             require_once $section . '.html';
@@ -32,7 +36,7 @@
     </main> 
 
     <footer>
-        <?php include 'footer.html'; ?>
+        <?php include 'views/footer.html'; ?>
     </footer>
 
       

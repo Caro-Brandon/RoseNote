@@ -4,39 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Rose Notes.</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="../css/register.css">
+    <link rel="shortcut icon" href="img/iconos/rosa.png" type="image/x-icon">
+        
 </head>
 <body>
-    <main>
-        <h1 class="tituloh1">REGISTRATE</h1>
-        <form class="formulario">
-            <label class="etiquetas-usuario">Nombre Completo</label>
-            <br>
-            <input type="text" class="campos-input">
-            <br>
-            <label class="etiquetas-usuario">Correo Electrónico</label>
-            <br>
-            <input type="email" class="campos-input" placeholder="example@gmail.com">
-            <br>
-            <label class="etiquetas-usuario">Contraseña</label>
-            <br>
-            <input type="password" class="campos-input">
-            <br>
-            <label class="etiquetas-usuario">Confirmar Contraseña</label>
-            <br>
-            <input type="password" class="campos-input">
-            <br>
-            <input type="button" class="boton-crear-cuenta" value="Crear Cuenta">
-            <br>
-            <p>¿Ya tenés cuenta?</p>
-            <br>
-            <input type="button" class="boton-inicio-sesion" value="Inicia Sesión">
+         <form action="../register.php">
+          
+          <div class="contenedorForm">
+              <h1>Registro</h1>
+              
+              <div class="contenedor"> 
+                   <input type="text" placeholder="Ingrese su nombre" class="rellenar">
+              </div>
+      
+              <div class="contenedor"> 
+                  <input type="email" placeholder="ingrese su gmail" class="rellenar">
+              </div>
+      
+              <div class="contenedor"> 
+                <input type="password" placeholder="Ingrese su contraseña" class="rellenar">
+             </div>
+
+             <div class="contenedor"> 
+                <input type="password" placeholder="confirme su contraseña" class="rellenar">
+             </div>
+      
+            
+              <button type="submit" class="btn">Enviar</button>
+      
+          </div>
         </form>
-    </main>
-    <footer>
-      <div class="contenedorFooter">
-        <span>© 2025 RoseNote</span>
-      </div>
-    </footer>
-</body>
+      
+ </body>
 </html>

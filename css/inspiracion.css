@@ -1,0 +1,89 @@
+.general {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.contenedorInspiracion h1{
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+.contenedorInspiracion {
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #fcb3c2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    height: 450px;
+    margin: 30px;
+ }
+ 
+
+ 
+.fondo_contenedor {
+    border-radius: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 30px;
+    height: 350px;
+    width: 500px;
+    border: 1px solid #ffd1da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+ @media screen and (max-width: 576px) {
+    .contenedorInspiracion {
+        width: 90%;
+        height: auto;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .fondo_contenedor {
+        height: auto;
+        min-height: 200px;
+        margin: 15px;
+    }
+}
+
+.btn {
+    display: block;            
+    margin: 15px; 
+    background-color: #fcb3c2;
+    color: black;
+    border: 2px solid #fcb3c2;
+    position: relative;
+     width: auto;
+  }
+  
+  .btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fcb3c2;
+    transition: width 0.3s ease;
+    z-index: -1;
+  }
+  
+  .btn:hover::after {
+    width: 100%;
+  }
+  
+  .btn:hover {
+    color: white;
+     border: 2px solid #fcb3c2;
+    position: relative;
+     width: auto;
+
+  }
