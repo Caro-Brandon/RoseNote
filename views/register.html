@@ -7,30 +7,29 @@
    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
-    <link rel="stylesheet" href="../css/register.css">
-    <link rel="shortcut icon" href="img/iconos/rosa.png" type="image/x-icon">
-        
+    <link rel="stylesheet" href="/RoseNote/css/register.css">
+    <link rel="shortcut icon" href="/RoseNote/img/iconos/rosa.png">
 </head>
 <body>
-         <form action="../register.php">
+         <form action="/RoseNote/register.php" method="POST">
           
           <div class="contenedorForm">
               <h1>Registro</h1>
               
               <div class="contenedor"> 
-                   <input type="text" placeholder="Ingrese su nombre" class="rellenar">
+                   <input type="text" name="nombre" placeholder="Ingrese su nombre" class="rellenar">
               </div>
       
               <div class="contenedor"> 
-                  <input type="email" placeholder="ingrese su gmail" class="rellenar">
+                  <input type="email" name="correo" placeholder="ingrese su gmail" class="rellenar">
               </div>
       
               <div class="contenedor"> 
-                <input type="password" placeholder="Ingrese su contraseña" class="rellenar">
+                <input type="password" name="pass" placeholder="Ingrese su contraseña" class="rellenar">
              </div>
 
              <div class="contenedor"> 
-                <input type="password" placeholder="confirme su contraseña" class="rellenar">
+                <input type="password" name="pass2" placeholder="confirme su contraseña" class="rellenar">
              </div>
       
             
