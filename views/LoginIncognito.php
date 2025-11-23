@@ -119,7 +119,4 @@
 </html>
 
 
-<!-- por el momento no lo vamos a usar en este<div class="botones">
-                <a href="soportePrincipal.php" class="btn">Iniciar Sesión</a>
-                <a href="logout.php" class="btn">Registrate</a>
-            </div> -->
+ 
