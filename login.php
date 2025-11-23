@@ -1,33 +1,40 @@
 <?php
-include("includes/config.php");
+require_once "app/config/config.php";
+header("Content-Type: application/json");
 
-$usuario = $_POST['usuario'];
-$pass = $_POST['pass'];
+$email = trim($_POST['email'] ?? '');
+$contraseña = trim($_POST['contraseña'] ?? '');
 
-$sql = "SELECT * FROM usuario WHERE correo = '$usuario' OR nombre = '$usuario'";
-$result = mysqli_query($conex, $sql);
-
-if (mysqli_num_rows($result) == 1) {
-
-    $user = mysqli_fetch_assoc($result);
-
-    if (!isset($user['contraseña'])) {
-        die("Error: el campo 'contraseña' no existe en la BD. Cambiale el nombre a 'password' en tu tabla.");
-    }
-
-    if (password_verify($pass, $user['contraseña'])) {
-
-        $_SESSION['usuarioID'] = $user['usuarioID'];
-        $_SESSION['nombre'] = $user['nombre'];
-
-        header("Location: index.php");
-        exit();
-
-    } else {
-        echo "Contraseña incorrecta";
-    }
-
-} else {
-    echo "El usuario no existe";
+if ($email === '' || $contraseña === '') {
+    echo json_encode(["success" => false, "message" => "Completa todos los campos."]);
+    exit();
 }
-?>
+
+$stmt = mysqli_prepare($conex, "SELECT correo, contraseña FROM usuario WHERE correo = ? LIMIT 1");
+mysqli_stmt_bind_param($stmt, "s", $email);
+mysqli_stmt_execute($stmt);
+$result = mysqli_stmt_get_result($stmt);
+
+if ($result && mysqli_num_rows($result) === 1) {
+    $row = mysqli_fetch_assoc($result);
+
+    if (password_verify($contraseña, $row['contraseña'])) {
+        $_SESSION['email'] = $row['correo'];
+        echo json_encode([
+            "success" => true,
+            "message" => "Inicio de sesión exitoso.",
+            "usuario" => $row['correo']  
+        ]);
+        exit();
+    }
+
+    echo json_encode(["success" => false, "message" => "Contraseña incorrecta."]);
+    exit();
+}
+
+echo json_encode([
+    "success" => false,
+    "message" => "Correo no registrado."
+]);
+exit();
+ 

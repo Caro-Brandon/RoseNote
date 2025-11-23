@@ -1,6 +1,5 @@
 <?php 
 require_once "app/config/config.php";  
-$section = "views/about_us";
+$section = "views/shop";
 require_once "layout.php";
 ?>
- 

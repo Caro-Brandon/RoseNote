@@ -1,6 +1,6 @@
 <?php 
 require_once "app/config/config.php";  
-$section = "views/about_us";
+$section = "views/fondos_disponibles";
 require_once "layout.php";
 ?>
  

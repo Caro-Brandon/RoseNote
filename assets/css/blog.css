@@ -1,0 +1,95 @@
+.general{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto{
+    text-align: center;
+  }
+.texto h1{
+    margin: 20px;
+    color:#FF6984;
+}
+.texto span{
+    color: gray;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.hojaParaEscribir{
+    border: 1px solid red;
+    width: 500px;
+    border-radius: 30px;
+    height: 450px; 
+}
+.hojaParaEscribir textarea{
+    font-size: 25px;
+     width: 100%;
+    height: 100%;
+   border: none;
+   border-radius: 30px;
+   outline: none;
+   background: url('../img/fondos/HojaDeNotas/hojaPredeterminada.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;    
+}
+
+.btn {
+  display: block;
+  margin: 25px auto 0;
+  background-color: #fcb3c2;
+  color: black;
+  border: 2px solid #fcb3c2;
+  position: relative;
+  width: 20%;
+ 
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fcb3c2;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+.btn:hover {
+  color: white;
+  border: 2px solid #fcb3c2;
+  width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .hojaParaEscribir {
+      width: 90%;
+      height: 400px;
+  }
+  .hojaParaEscribir textarea {
+      font-size: 20px;
+  }
+  .btn {
+      width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hojaParaEscribir {
+      width: 95%;
+      height: 300px;
+  }
+  .hojaParaEscribir textarea {
+      font-size: 18px;
+  }
+  .btn {
+      width: auto;
+  }
+}

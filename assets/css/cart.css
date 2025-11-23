@@ -1,0 +1,100 @@
+.carrito-contenedor {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 150, 200, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.carrito-contenedor h1 {
+    text-align: center;
+    color: #ff79c6;
+    margin-bottom: 30px;
+}
+
+.carrito-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carrito-productos .tarjeta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background: rgba(255, 137, 194, 0.2);
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carrito-productos .tarjeta:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.carrito-productos .tarjeta img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carrito-productos .tarjeta .info {
+    flex: 1;
+}
+
+.carrito-productos .tarjeta .info h3 {
+    margin: 0 0 5px 0;
+    color: #e36adb;
+}
+
+.carrito-productos .tarjeta .info p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.carrito-productos .tarjeta .contenedorBTN {
+    display: flex;
+    gap: 5px;
+}
+
+.carrito-productos .tarjeta .contenedorBTN button {
+    flex: 1;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ff79c6;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carrito-productos .tarjeta .contenedorBTN button:hover {
+    background-color: red;
+}
+
+.carrito-total {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.carrito-total h2 {
+    color: #ff79c6;
+    margin-bottom: 15px;
+}
+
+.carrito-total button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ff79c6;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carrito-total button:hover {
+    background-color: #ff4fa1;
+}

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif, Verdana;
+    background-size: cover;
+    color: white;
+}
+
+.editar-panel {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.caja-editar {
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255, 150, 200, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 150, 200, 0.3);
+}
+
+.titulo {
+    display: block;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #e36adb;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #e36adb;
+}
+
+.campo small {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #ff79c6;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #ff4fa1;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #ff79c6;
+    font-size: 16px;
+}
+
+.volver:hover {
+    color: #5d0035;
+}

@@ -1,0 +1,86 @@
+.general {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Arial', sans-serif;
+  padding: 0 10px;
+}
+
+.nota {
+  background-color: #fff; 
+  border-radius: 30px;      
+  border: 1px solid red;
+  width: 500px;
+  max-width: 90%;
+  height: 500px;
+  display: flex;                        
+  justify-content: center;               
+  align-items: center;                  
+  text-align: center;
+  overflow-y: auto;                   
+}
+
+.btn-abajo {
+  margin-top: 10px; 
+}
+
+.btn {
+  display: block;            
+  margin: 25px auto 0; 
+  background-color: #fcb3c2;
+  color: black;
+  border: 2px solid #fcb3c2;
+  position: relative;
+  width: 20%;
+  max-width: 120px;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fcb3c2;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+.btn:hover {
+  color: white;
+  border: 2px solid #fcb3c2;
+}
+
+.contenedorBTN {
+  display: flex;          
+  justify-content: center;  
+  gap: 20px;                
+  margin-top: 20px; 
+  flex-wrap: wrap;
+}
+
+.contenedorBTN .btn {
+  width: 120px;              
+  padding: 10px 0;           
+  margin: 0;                   
+}
+
+@media screen and (max-width: 600px) {
+  .nota {
+      width: 100%;
+      height: 400px;
+  }
+
+  .btn {
+      width: 45%;
+      max-width: 200px;
+  }
+}

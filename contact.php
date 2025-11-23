@@ -1,5 +1,5 @@
 <?php 
-// require_once "includes/config.php"; todavia no tenemos bd 
+require_once "app/config/config.php";  
 $section = "views/contact";
 require_once "layout.php";
 ?>

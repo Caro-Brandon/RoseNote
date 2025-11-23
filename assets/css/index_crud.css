@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+  
+  body {
+    background-size: cover;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif, Verdana;
+   }
+  
+  .crud-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;    color: white;
+
+  }
+  
+  .titulo {
+    margin-top: 20px;
+    color: #e36adb;
+    font-weight: bold;
+    font-size: 2.5rem;
+    display: block;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .crud-panel .caja-crud {
+    width: 100%;
+    max-width: 1500px;
+    background: rgba(255, 150, 200, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    border: 1px solid rgba(255, 150, 200, 0.3);
+  }
+  
+  .crud-panel .btn {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #ff79c6;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .crud-panel .btn:hover {
+    background-color: #ff4fa1;
+  }
+  
+  .crud-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .crud-panel th,
+  .crud-panel td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 200, 230, 0.25);
+  }
+  
+  .crud-panel th {
+    background-color: rgba(255, 100, 180, 0.4);
+    font-size: 18px;
+  }
+  
+  .crud-panel tr:hover {
+    background-color: rgba(255, 150, 200, 0.25);
+  }
+  
+  .crud-panel td img {
+    border-radius: 5px;
+    max-width: 120px;
+    height: auto;
+  }
+  
+  .editar-boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e649b5;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .editar-boton:hover {
+    background-color: #ff79c6;
+  }
+  
+  .eliminar-boton {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #d8256f;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .eliminar-boton:hover {
+    background-color: #ff4fa1;
+  }
+  
+  .crud-panel form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 180, 220, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid rgba(255, 150, 200, 0.3);
+  }
+  
+  .crud-panel form .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .crud-panel form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffd8f5;
+  }
+  
+  .crud-panel form input,
+  .crud-panel form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  .crud-panel form button {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #ff79c6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .crud-panel form button:hover {
+    background-color: #ff4fa1;
+  }
+  

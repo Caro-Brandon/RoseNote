@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff0f5;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    display: flex;
+    margin: 20px;
+    justify-content: flex-start;
+    color: #e36adb;
+    padding-left: 30px;
+}
+.regresar{
+    display: flex;
+    margin-left: 20px;
+    justify-content: flex-start;
+    color: #70386c;
+    padding-left: 30px;
+}
+
+.tienda-titulo {
+    text-align: center;
+    color: #ff79c6;
+    margin-top: 20px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 40px;
+    padding: 10px;
+}
+
+@media (max-width: 1100px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 500px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.tarjeta {
+    background: rgba(255, 150, 200, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+}
+
+.tarjeta:hover img {
+    transform: scale(1.1);
+}
+
+
+.tarjeta h3 {
+    margin: 10px 0 5px 0;
+    color: #e36adb;
+}
+
+.tarjeta p {
+    margin: 5px 0 10px 0;
+    font-weight: bold;
+}
+
+.contenedorBTN {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+    margin-top: 10px;
+}
+
+.contenedorBTN button {
+    flex: none;         
+    max-width: 150px;   
+    padding: 8px 12px;  
+    border-radius: 8px;
+    border: none;
+    background-color: #ff79c6;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contenedorBTN button:hover {
+    background-color: #ff0090;
+}
+ 
+.contenedorBTN button a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
