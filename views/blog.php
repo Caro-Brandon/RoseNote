@@ -5,7 +5,7 @@
 <section class="general">
     <div class="texto">
         <h1>Blog de RosaNotes</h1>  
-            <span>Un espacio para encontrar consejos, historias <br>
+            <span>Un espacio para anotar consejos, historias <br>
             y motivacion para que tus ideas florezcan <br>
             cada dia.    
             </span>
